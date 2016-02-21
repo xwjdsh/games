@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<games chartsNum="5">
+		<game gameId="1" gameName="俄罗斯方块" logicClassName="cn.cduestc.priv.tetris.GameLogic2Tetris"
+			cfgPath="config/gameCfg2Tetris.xml" materialPath="material/material4Tetris"
+			dtoClassName="cn.cduestc.priv.tetris.GameDto2Tetris" chartsPath="tetris.bat"/>
+		<game gameId="2" gameName="贪吃蛇" logicClassName="cn.cduestc.priv.snack.GameLogic2Snack"
+			cfgPath="config/gameCfg2Snack.xml" materialPath="material/material4Snack"
+			dtoClassName="cn.cduestc.priv.snack.GameDto2Snack" chartsPath="snack.bat"/>
+		<game gameId="3" gameName="坦克大战" logicClassName="cn.cduestc.priv.tank.GameLogic2Tank"
+		cfgPath="config/gameCfg2Tank.xml" materialPath="material/material4Tank"
+		dtoClassName="cn.cduestc.priv.tank.GameDto2Tank" chartsPath="tank.bat"/>
+	</games>
+	<db username="root" password="123456" url="jdbc:mysql://localhost/gamedata"/>
+	<ui title="小游戏" width="425" height="525" borderSize="8" panding="10" cellSize="20">
+		<gamemap maxWidth="10" minWidth="0" maxHeight="20" minHeight="0" />
+		<suffixs>
+		    <suffix>.png</suffix>
+		</suffixs>
+		<list_window>
+			<window className="cn.cduestc.priv.ui.WindowBackGround" x="0" y="0" w="0" h="0" />
+			<window className="cn.cduestc.priv.ui.WindowGame" x="50" y="50" w="216" h="416" />
+			<window className="cn.cduestc.priv.ui.WindowShow" x="266" y="50" w="116" h="316" />
+			<window className="cn.cduestc.priv.ui.WindowButton" x="266" y="366" w="116" h="100" />
+		</list_window>
+		<buttons>
+		 	<start x="280" y="380" w="84" h="30"/>
+		 	<back  x="280" y="418" w="84" h="30"/>
+		 	<charts x="285" y="15" w="30" h="30"/>
+		 	<seting x="320" y="15" w="30" h="30"/>
+		 	<skin x="355" y="15" w="30" h="30"/>
+		 	<about x="10" y="10" w="130" h="30"/>
+		</buttons>
+	</ui>
+</root>

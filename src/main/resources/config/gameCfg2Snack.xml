@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game startLength="3" levelScore="20" stoneCount="10">
+	<keys>
+		<key keycode="87" method="disposeUp" describe="上" />
+		<key keycode="83" method="disposeDown" describe="下" />
+		<key keycode="68" method="disposeRight" describe="右" />
+		<key keycode="65" method="disposeLeft" describe="左" />
+		<key keycode="73" method="disposeFunctionUp" describe="阴影开关" />
+		<key keycode="75" method="disposeFunctionDown" describe="暂停" />
+		<key keycode="74" method="disposeFunctionLeft" describe="改变地图" />
+		<key keycode="76" method="disposeFunctionRight" describe="作弊" />
+	</keys>
+</game>
