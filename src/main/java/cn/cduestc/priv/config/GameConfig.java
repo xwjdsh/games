@@ -205,6 +205,7 @@ public class GameConfig {
 			if (!chartsFile.exists()) {
 				return null;
 			}
+			System.out.println(chartsFile.getAbsolutePath());
 			ois = new ObjectInputStream(new FileInputStream(chartsFile));
 			// 反序列化解析为对象
 			return ((List<Player>) ois.readObject());
