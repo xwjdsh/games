@@ -160,11 +160,11 @@ public class GamePanel extends JPanel {
 		this.transparentBtn(this.skin);
 		this.add(this.skin);
 		//初始化关于按钮
-		this.about=new JButton(StyleImage.ABOUTED_IMG);
-		this.about.setBounds(cfg.getAboutBtn().getX(), cfg.getAboutBtn().getY(),
-				cfg.getAboutBtn().getW(), cfg.getAboutBtn().getH());
-		this.transparentBtn(this.about);
-		this.add(about);
+//		this.about=new JButton(StyleImage.ABOUTED_IMG);
+//		this.about.setBounds(cfg.getAboutBtn().getX(), cfg.getAboutBtn().getY(),
+//				cfg.getAboutBtn().getW(), cfg.getAboutBtn().getH());
+//		this.transparentBtn(this.about);
+//		this.add(about);
 		//初始为不可用
 		this.start.setEnabled(false);
 		this.back.setEnabled(false);
@@ -193,8 +193,8 @@ public class GamePanel extends JPanel {
 			imageIconMap.put(this.charts, new ImageIcon[]{StyleImage.CHARTSED_IMG,StyleImage.CHARTSING_IMG});
 			eventMap.put(this.skin,clazz.getMethod("skin"));
 			imageIconMap.put(this.skin, new ImageIcon[]{StyleImage.SKINED_IMG,StyleImage.SKINING_IMG});
-			eventMap.put(this.about, clazz.getMethod("about"));
-			imageIconMap.put(this.about, new ImageIcon[]{StyleImage.ABOUTED_IMG,StyleImage.ABOUTING_IMG});
+//			eventMap.put(this.about, clazz.getMethod("about"));
+//			imageIconMap.put(this.about, new ImageIcon[]{StyleImage.ABOUTED_IMG,StyleImage.ABOUTING_IMG});
 		} catch (Exception e) {
 			e.printStackTrace();
 		} 
@@ -244,7 +244,7 @@ public class GamePanel extends JPanel {
 		//设置按钮事件
 		this.skin.addMouseListener(action_event);
 		//关于按钮事件
-		this.about.addMouseListener(action_event);
+//		this.about.addMouseListener(action_event);
 	}
 	
 	/**
