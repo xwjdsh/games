@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>gameMachine</groupId>
-  <artifactId>gameMachine</artifactId>
+  <groupId>games</groupId>
+  <artifactId>games</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
   <defaultGoal>compile</defaultGoal>
@@ -68,12 +68,12 @@
 <dependency>
   <groupId>jaxen</groupId>
   <artifactId>jaxen</artifactId>
-  <version>1.1</version>
+  <version>1.2.0</version>
 </dependency>
 <dependency>
   <groupId>mysql</groupId>
   <artifactId>mysql-connector-java</artifactId>
-  <version>8.0.16</version>
+  <version>8.0.25</version>
 </dependency>
 </dependencies>  
 </project>
